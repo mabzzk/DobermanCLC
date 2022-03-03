@@ -1,6 +1,5 @@
 
 
-
 //Circle stuff
 let radius = 150;
 new CircleType(document.getElementById('text')).radius(radius)
@@ -26,4 +25,7 @@ jQuery(document).ready(function() {
   }, 20);
 
 });
+
+
+
 

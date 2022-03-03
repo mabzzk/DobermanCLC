@@ -64,7 +64,7 @@ requestAnimationFrame(animate);
 
 //TEXTURE
 const texture = new THREE.TextureLoader().load(
-  "./assets/whiteCircle.png",
+  "./assets/blueorange.png",
   (texture) => {
     texture.minFilter = THREE.NearestFilter;
   }
