@@ -1,0 +1,22 @@
+{
+  "name": "dobermanclc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mabzzk/DobermanCLC.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mabzzk/DobermanCLC/issues"
+  },
+  "homepage": "https://github.com/mabzzk/DobermanCLC#readme",
+  "dependencies": {
+    "circletype": "^2.3.0"
+  }
+}

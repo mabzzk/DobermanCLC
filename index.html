@@ -11,21 +11,19 @@
 </head>
 
 <body>
-    <div class='cursor' id="cursor"></div>
-
 
 
     <div class="main">
+        <span id="cursorCircle" class="cursorCircle"></span>
 
-        <canvas id="canvas"></canvas>
         <div class="textContent">
             <br>
             <br>
             <br>
             <br>
-            <h3>Hey Doberman
+            <p>Hey Doberman
                 <br> CPH, OSLO & STH
-            </h3>
+            </p>
             <div class="myP">
                 <p>
                     Come join us in
@@ -57,16 +55,36 @@
                     <br>
 
             </div>
-            <div class="linky" id="linky">
-                <a href="/">SIGN UP HERE</a>
+            <div class="circle-container">
+                <div class="left">
+                    <div class="circle">
+                        <div class="text" id="text">
+                            <h5>COCKTAIL PARTIES!</h5>
+                        </div>
+
+                    </div>
+                    <div class="circle2">
+                        <div class="text" id="text2">
+                            <h5>LOVE BAZAAR</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="circle3">
+                        <div class="text" id="text3">
+                            <h5>SIGN UP HERE</h5>
+                        </div>
+                    </div>
+                </div>
             </div>
+
             <br>
             <br>
             <br>
             <div class="myP">
                 <p>
 
-                    <u>TOPICS:</u>
+                    <u>TOPICS</u>
                     <br>
                     Designing Speculative &
                     <br>
@@ -91,10 +109,17 @@
 
                 </p>
             </div>
+
+
         </div>
     </div>
 
-    <script src="js/dobermanThing.js" type="module"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <script src="dist/circletype.min.js"></script>
+
+
     <script src="js/cursor.js" type="module"></script>
 </body>
 

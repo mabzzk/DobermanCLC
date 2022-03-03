@@ -1,20 +1,20 @@
+* {
+  cursor: none;
+}
+
 @font-face {
   font-family: "gerstner";
   src: url("fonts/GerstnerProgramm-Regular.otf")
 
 }
 
-
 body {
   width: 100vw;
   height: 100vh;
-  margin: 0;
-  /* background-image: url("assets/backg.jpg"); */
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: black;
-  cursor: none;
   font-family: gerstner;
   overflow: -moz-scrollbars-vertical;
   overflow-y: scroll;
@@ -22,45 +22,17 @@ body {
 
 }
 
-
-
-#canvas {
-  width: 100vw;
-  height: 100vh;
-  margin-left: 300px;
-
-}
-
-
-.cursor {
-  position: fixed;
+.cursorCircle {
+	position: absolute;
+  background-color: rgb(249, 153, 56);
+	width: 500px;
+	height: 500px;
   border-radius: 50%;
-  transform: translateX(-50%) translateY(-50%);
-  pointer-events: none;
-  left: -100px;
-  top: 50%;
   z-index: 1000;
   mix-blend-mode: difference;
-
-
-  background-color:
-rgb(231, 151, 23);
-
-
-  height: 500px;
-  width: 500px;
-  transition: all 100ms ease-out;
+  pointer-events: none;
 }
 
-.textContent {
-
-}
-
-h3 {
-  color: rgb(255, 255, 255);
-  font-size: 2rem;
-
-}
 
 p {
   color: rgb(253, 253, 253);
@@ -69,39 +41,68 @@ p {
 
 }
 
-.main { position:relative } /* Make this a positioned parent */
+
 .textContent     {
-  position:absolute;
-  top:50%; left:30%;
-    background-color: rgb(0, 0, 0);
+margin-top: 250vh;
   width: 50vw;
-  height: 50vh;
-}
+  height: 100%;
 
-a {
-  text-decoration: none;
-  font-size: 3.32rem;
-  font-weight: bolder;
-  color: black
 }
 
 
-.linky {
-  background-color: rgb(255, 255, 255);
-  width: 350px;
-  height: 350px;
+.circle-container {
+  display: flex;
+  flex-direction: row;
+
+}
+
+.circle,
+.circle2,
+.circle3 {
+  position: relative;
+  width: 300px;
+  height: 300px;
   border-radius: 50%;
   display: flex;
   justify-content: center;
-
   align-items: center;
-  animation-name: rotate;
-  animation-duration: 10s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
 }
 
-@keyframes rotate{
-    from{ transform: rotate(-360deg); }
-    to{ transform: rotate(360deg); }
+
+.circle {
+background-color: rgb(246, 93, 93);
 }
+
+.circle2 {
+  background-color: rgb(221, 123, 241);
+}
+
+.circle3 {
+  margin-top: 150px;
+  margin-left: -40px;
+  background-color: rgb(57, 57, 238);
+}
+
+.text {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  animation: anim 10s linear infinite;
+  font-size: 3rem;
+  color: white;
+  text-shadow: 4px 4px rgb(255, 255, 0);
+
+}
+
+
+
+@keyframes anim {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg)
+  }
+
+}
+
