@@ -4,7 +4,7 @@
 
 @font-face {
   font-family: "gerstner";
-  src: url("fonts/GerstnerProgramm-LightItalic.otf")
+  src: url("fonts/GerstnerProgramm-Regular.otf")
 }
 
 body {
@@ -13,11 +13,18 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: black;
+  background-color: white;
   font-family: gerstner;
   overflow: -moz-scrollbars-vertical;
   overflow-y: scroll;
 
+
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
 }
 
@@ -34,7 +41,7 @@ body {
 
 
 p {
-  color: rgb(253, 253, 253);
+  color: black;
   font-family: gerstner;
   font-size: 1.4rem;
 
@@ -42,11 +49,14 @@ p {
 
 
 .textContent     {
-  margin-top: 250vh;
+  margin-top: 120vh;
   width: 50vw;
   height: 100%;
-  border: 2px solid white;
   padding-left: 2rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: left;
 
 }
 
@@ -58,7 +68,8 @@ p {
 
 .circle,
 .circle2,
-.circle3 {
+.circle3,
+.circle4 {
   position: relative;
   width: 300px;
   height: 300px;
@@ -70,34 +81,47 @@ p {
 
 
 .circle {
-background-color: rgb(246, 93, 93);
-color: rgb(255, 238, 7);
-  text-shadow: 2px 2px rgb(20, 236, 113);
-  animation: anim 10s linear infinite;
+background-color: rgb(119, 171, 111);
+color: rgb(254, 248, 131);
+
+  animation: anim 20s linear infinite;
 }
 
 .circle2 {
-  background-color: rgb(221, 123, 241);
-  color: rgb(54, 20, 20);
-  text-shadow: 2px 2px rgb(255, 255, 0);
-  animation: anim 12s linear infinite;
+  background-color: rgb(226, 175, 236);
+
+  color: white;
+  animation: anim 17s linear infinite;
 }
 
 .circle3 {
   margin-top: 150px;
   margin-left: -40px;
-  background-color: rgb(57, 57, 238);
-  color: rgb(255, 255, 255);
-  text-shadow: 4px 4px rgb(255, 255, 0);
+  background-color: rgb(254, 248, 131);
+  color: rgb(62, 40, 40);
   animation: anim 9s linear infinite;
+}
+
+.circle4 {
+  margin-top:100px;
+  margin-bottom:100px;
+  background-color: rgb(207, 151, 244);
+  color: rgb(0, 0, 0);
+  animation: anim 9s linear infinite;
+}
+
+
+
+#text4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .text {
   width: 100%;
   height: 100%;
-  position: absolute;
   margin-top: 1rem;
-
   font-size: 2.5rem;
 
 
