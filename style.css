@@ -90,6 +90,10 @@ p {
     height: 200px;
     padding: 0;
   }
+  .textContent {
+    margin-top: 200vh;
+    width: 60vw;
+  }
 }
 
 h5 {
