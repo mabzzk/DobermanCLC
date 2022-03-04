@@ -10,8 +10,8 @@ jQuery(document).ready(function() {
   var xp = 0, yp = 0;
 
   $(document).mousemove(function(e){
-    mouseX = e.pageX - 100;
-    mouseY = e.pageY - 100;
+    mouseX = e.pageX - 250;
+    mouseY = e.pageY - 250;
   });
 
   setInterval(function(){
