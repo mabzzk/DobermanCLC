@@ -66,6 +66,7 @@ function animateDiv(){
       animateDiv();
     });
 
+
 };
 
 function calcSpeed(prev, next) {
