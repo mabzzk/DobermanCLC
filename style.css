@@ -103,7 +103,7 @@ h6 {
 
 .textContent     {
   position: absolute;
-  margin-top: 100vh;
+  margin-top: 70vh;
   width: 50vw;
   height: 100%;
   padding-left: 2rem;
@@ -145,8 +145,8 @@ h6 {
     padding: 0;
   }
   .textContent {
-    margin-top: 100vh;
-    width: 60vw;
+    margin-top: 80vh;
+    width: 70vw;
   }
 
   .left-top {
